@@ -1,0 +1,89 @@
+@import url('./normalize.css');
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    padding-top: 10px;
+}
+
+.menu {
+    width:300px;
+}
+
+.menu .availableGames .player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: nowrap;
+
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.menu .availableGames .player .playerName {
+    display: inline-block;
+    width: 180px;
+    word-wrap: break-word;
+}
+
+.gameViewBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    height:420px;
+    width:420px;
+    font-size: 7em;
+}
+
+.gameStatus {
+    text-align: center;
+}
+
+.row0_0, .row0_1, .row0_2, .row1_0, .row1_1, .row1_2, .row2_0, .row2_1, .row2_2 {
+    width: 136px;
+    height: 136px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ccc;
+
+    text-align: center;
+}
+
+.row0_0, .row1_0, .row2_0 {
+    border-left: none;
+}
+
+.row0_2, .row1_2, .row2_2 {
+    border-right: none;
+}
+
+.row0_0, .row0_1, .row0_2 {
+    border-top: none;
+}
+
+.row2_0, .row2_1, .row2_2 {
+    border-bottom: none;
+}
+
+.chat {
+    width:300px;
+}
+
+.chat .messages {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+video {
+    width: 100%;
+}
